@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amruta Sant — Portfolio</title>
+  <style>
+    :root{
+      --bg1:#0f0f1a; --bg2:#1a1a2e; --accent:#ff86c8; --muted:#b0b3c1; --card:rgba(255,255,255,0.05);
+      --glass: rgba(255,255,255,0.04);
+      --radius:20px;
+      --maxw:1100px;
+      font-family: Poppins, Inter, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#f8f8ff}
+    .container{max-width:var(--maxw);margin:40px auto;padding:24px}
+
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+    .brand{display:flex;gap:15px;align-items:center}
+    .avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#ff86c8,#8e44ad);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+    nav{display:flex;gap:14px}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:6px 10px;border-radius:10px}
+    nav a:hover{background:rgba(255,255,255,0.08)}
+
+    .hero{display:grid;grid-template-columns:1fr 350px;gap:24px;margin-bottom:30px}
+    .card{background:var(--glass);padding:22px;border-radius:var(--radius);backdrop-filter:blur(8px);box-shadow:0 6px 20px rgba(0,0,0,0.4)}
+    .intro h1{margin:0;font-size:36px;font-weight:800;color:#ffb3e6}
+    .intro p{color:var(--muted);margin:12px 0 18px;font-size:15px;line-height:1.6}
+    .btn{padding:10px 16px;border-radius:12px;font-weight:700;text-decoration:none;display:inline-block}
+    .btn-primary{background:linear-gradient(90deg,#ff86c8,#b46bff);color:white}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.1);color:var(--accent)}
+
+    h2.section-title{font-size:20px;font-weight:700;margin:0 0 14px;color:#ffb3e6}
+    .skills{display:flex;gap:10px;flex-wrap:wrap}
+    .skill{padding:8px 14px;background:rgba(255,255,255,0.06);border-radius:999px;font-size:14px;font-weight:600;color:#fff}
+
+    .timeline{display:flex;flex-direction:column;gap:16px}
+    .exp{display:flex;gap:18px}
+    .period{min-width:120px;color:var(--muted);font-size:13px}
+
+    footer{text-align:center;margin-top:40px;color:var(--muted);font-size:13px}
+
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}nav{display:none}}
+    @media(max-width:500px){.avatar{width:60px;height:60px;font-size:18px}.intro h1{font-size:26px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AS</div>
+        <div>
+          <div style="font-weight:800;font-size:20px">Amruta Sant</div>
+          <div style="color:var(--muted);font-size:13px"></div>
+        </div>
+      </div>
+      <nav>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card intro">
+        <h1></h1>
+        <p>Passionate about crafting engaging visual experiences through thoughtful design, strong typography, color theory. Eager to contribute creativity and fresh ideas to a fast growing design team.</p>
+        </div>
+
+      <aside class="card" style="text-align:center">
+        <h3 style="margin-top:0;color:#ffb3e6">Profile</h3>
+        <p style="color:var(--muted);font-size:14px">Quick Learner • Team Player • Detail‑oriented Creator</p>
+        <p style="color:var(--muted);font-size:14px">• Highly creative and passionate about designing</p>
+      </aside>
+    </div>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills card" style="padding:16px">
+        <div class="skill">Adobe Photoshop</div>
+        <div class="skill">Adobe Illustrator</div>
+        <div class="skill">UI Mockups</div>
+        <div class="skill">Visual Asset Creation</div>
+        <div class="skill">Basic Motion Graphics</div>
+        <div class="skill">Color Theory</div>
+        <div class="skill">Typography</div>
+        <div class="skill">Creative Thinking</div>
+        <div class="skill">.NET</div>
+        <div class="skill">SQL</div>
+        <div class="skill">C#</div>
+        
+
+
+        
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline card" style="padding:16px">
+
+        <div class="exp">
+          <div class="period">04/2023 – 06/2023</div>
+          <div>
+            <strong>Software Developer — GAO Tek Inc. (Remote)</strong>
+            <p style="color:var(--muted);font-size:13px;margin-top:6px">Managed an intern team, created webpages, uploaded them to the company website, and contributed to UI/visual enhancements for digital content.</p>
+          </div>
+        </div>
+
+        <div class="exp">
+          <div class="period">09/2022 – 12/2022</div>
+          <div>
+            <strong>Software Developer Intern — Winjit Technologies (Nashik)</strong>
+            <p style="color:var(--muted);font-size:13px;margin-top:6px">Completed an intensive internship focusing on .NET Framework, SQL, and C#. Worked on Windows applications and web services while staying updated on the latest .NET advancements.</p>
+          </div>
+        </div>
+
+        <div class="exp">
+          <div class="period">08/2021 – 11/2021</div>
+          <div>
+            <strong>Intern — Vmedulife Software Services (Pune)</strong>
+            <p style="color:var(--muted);font-size:13px;margin-top:6px">Gained hands-on experience in data extraction, cleaning, and working with web technologies.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2 class="section-title">Achievements</h2>
+      <div class="card" style="padding:20px;line-height:1.6;font-size:14px;color:var(--muted)">
+        <ul style="margin:0 0 0 18px;padding:0;color:var(--muted)">
+          <li>Poster Competition Winner</li>
+          <li>Designed Creative Logos & Custom Name Plates for Bungalows</li>
+          <li>Student of the Year Award</li>
+          <li>Drawing Competition Winner</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card" style="padding:16px">
+        <p>Email: <a href="mailto:santamruta04@gmail.com" style="color:var(--accent)">santamruta04@gmail.com</a></p>
+        <p>Location: Pune, India</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Amruta Sant — Portfolio
+    </footer>
+  </div>
+</body>
+</html>
